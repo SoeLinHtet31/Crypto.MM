@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding-top: 10px;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: Arial;
+}
+
+.logo {
+    position: absolute;
+    object-fit:cover;
+    padding-top: 0px;
+    left: 0px;
+    top: 0px;
+    width: 230px;
+    height: 80px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-right: 100px;
+    background: rgb(0, 0, 0);
+    height: 85px;
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    text-align: right;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(234, 236, 239);
+    right: 100px;
+    width: 140px;
+    display: block;
+    padding: 35px 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: arial;
+    text-align: center;
+    font-size: 21px;
+    margin-right: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Home {
+    position: relative;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.left {
+    display: inline-block;
+    width: 50%;
+    height:850px;
+    background-color: #01072c;
+    color: rgb(0, 0, 0);
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 850px;
+    background-color: #01072c;
+}
+
+.right .BitcoinImage {
+    position: absolute;
+    left: 20%;
+    top: 38%;
+    height: 162px;
+    width: 138px;
+}
+
+.number {
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #c4b1b1;
+    text-shadow: 0 0 2px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff;
+    transform-origin: bottom;
+    animation: animate 2s linear forwards;
+}
+
+.number2 {
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #c4b1b1;
+    text-shadow: 0 0 2px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff;
+    transform-origin: bottom;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(0) scale(1);
+    }
+    70%
+    {
+        transform: translateY(-75px) scale(1);
+    }
+    0%
+    {
+        transform: translateY(-75px) scale(0);
+    }
+}
+
+.right .EthImage {
+    position: absolute;
+    left: 52%;
+    top: 38%;
+    height: 179px;
+    width: 155px;
+}
+
+
+.right .bitcoinValue {
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 5px #fff;
+    font-weight: bold;
+    font-size: 125%;
+    top: 66%;
+    left: 22.2%;
+}
+
+.right .eth {
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 5px #fff;
+    font-weight: bold;
+    font-size: 125%;
+    top: 66%;;
+    left: 55.4%;
+}
+
+.right .ethNumberCloud {
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 65.7%;
+    left: 55.5%;
+    z-index: 100;
+}
+
+.ethNumberCloud ::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    width: 50px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.right .bitcoinNumberCloud {
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 65.2%;
+    left: 23%;
+    z-index: 100;
+}
+
+.bitcoinNumberCloud ::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    width: 50px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.leftMessage {
+    color: #fff;
+    position: relative; 
+    text-align: left;
+    margin-left: 20%;
+    width: 70%;
+    top: 38%;
+}
+
+.leftMessage h1 {
+    font-size: 40px;
+}
+
+.leftMessage p {
+    text-align: left;
+}
+
+#About {
+    height:950px;
+    background-color: #01072c;
+}
+
+.leftForAboutSection {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 920px;
+    color: #fff;
+    background-color: #01072c;
+}
+
+.rightForAboutSection {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 850px;
+    background-color: #01072c;
+}
+
+.rightForAboutSection img {
+    position: relative;
+    top: 50px;
+    margin-left: 110px;
+}
+
+.about-content h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 45px;
+    top: 75px;
+    left: 180px;
+    width: 600px;
+}
+
+.about-content p {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 150px;
+    left: 180px;
+    width: 600px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+  
+.about-content {
+    flex: 1;
+}
+  
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section 2 Market */
+#Market {
+    height:700px;
+    background-color: #01072c;
+}
+
+#Market h1 {
+    color: rgb(234, 236, 239);
+    position: absolute;
+    left: 850px;
+    top: 1800px;
+    font-size: 30px;
+}
+
+.table-container {
+    width: 80%;
+    margin: 0rem auto;
+  }
+  
+  .cool-table {
+    margin-top: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .cool-table th,
+  .cool-table td {
+    color: rgb(234, 236, 239);
+    padding: 1rem;
+    border: 1px solid transparent; /* Hide default borders */
+  }
+
+  .cryptoName {
+    text-align: center;
+  }
+
+  .cryptoValue {
+    text-align: right;
+  }
+  
+  .cool-table th {
+    background-color: transparent;
+  }
+  
+  /* Apply 3D border effect */
+  .cool-table {
+    box-shadow: 0 0 0 1px rgb(234, 236, 239), 
+                0 2px 4px rgb(234, 236, 239);
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+}
+
+#Contact {
+    height:650px;
+    background-color: #01072c;
+}
+
+header {
+    background-color: #1b0404;
+    color: rgb(234, 236, 239);
+    text-align: center;
+    margin-top: 0rem;
+    padding: 1rem;
+}
+
+#emailForm button {
+    margin-top: 5px;
+}
+
+.contact-form {
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: rgb(234, 236, 239);
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+  }
+  
+  .contact-form button {
+    background-color: #333;
+    color: rgb(234, 236, 239);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #1b0404;
+    color: rgb(234, 236, 239);
+    text-align: center;
+    padding: 1rem;
+  }
